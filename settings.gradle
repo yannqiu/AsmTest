@@ -1,0 +1,3 @@
+include ':asmPlugin'
+include ':app'
+rootProject.name = "AsmTest"

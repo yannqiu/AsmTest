@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: AsmTest.asmPlugin.asmPlugin">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/asmPlugin/build/libs/asmPlugin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,29 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+
+
+dependencies {
+    implementation gradleApi()
+    implementation "com.android.tools.build:gradle:4.1.1"
+}
+
+afterEvaluate{
+    publishing {
+        publications {
+            asm(MavenPublication) {
+                from components.java
+                groupId "com.yann"
+                artifactId "plugin"
+                version "1.0"
+            }
+        }
+    }
+}
